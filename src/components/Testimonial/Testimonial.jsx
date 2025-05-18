@@ -83,10 +83,10 @@ const Testimonial = () => {
           </p>
         </div>
         {/* Testimonial cards section */}
-        <div>
-          <Slider {...setting}>
+        <div >
+          <Slider {...setting} >
             {TestimonialsData.map((item) => {
-              return (
+              
                 <div key={item.id}>
                   <div className="flex flex-col gap-4 p-8 shadow-lg mx-4 rounded-xl bg-secondary/10">
                     {/* upper section */}
@@ -110,7 +110,7 @@ const Testimonial = () => {
                     </div>
                   </div>
                 </div>
-              );
+             
             })}
           </Slider>
         </div>
